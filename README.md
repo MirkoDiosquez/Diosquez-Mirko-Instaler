@@ -1,42 +1,33 @@
-# Proyecto: apellido-nombre-negocio
+# Instaler - Entrega 1
 
-Este proyecto tiene como objetivo desarrollar una aplicación que gestione [describir brevemente el negocio, por ejemplo, "una clínica veterinaria" o "un servicio de reservas de turnos"]. 
+Repositorio: `diosquez-mirko-instaler`
 
-## Estructura del Repositorio
+## Estructura inicial
 
-El repositorio está organizado de la siguiente manera:
+- `Frontend/`
+- `Backend/`
+  - `src/models/`
 
-```
-apellido-nombre-negocio
-├── Frontend
-│   └── [Descripción de la funcionalidad que se desarrollará en el frontend]
-├── Backend
-│   └── src
-│       └── models
-│           ├── Cliente.js
-│           ├── Mascota.js
-│           └── Turno.js
-└── README.md
-```
+## Modelo de dominio
 
-### Descripción de Carpetas
+Entidades principales:
 
-- **Frontend/**: Esta carpeta está destinada al desarrollo de la parte frontend de la aplicación, que se implementará en etapas posteriores.
+1. `Usuario`
+2. `Producto`
+3. `SolicitudPresupuesto`
+4. `DetalleSolicitud`
 
-- **Backend/**: Esta carpeta contiene la lógica del backend, donde se definirán los modelos y la lógica de negocio.
+Relaciones:
 
-### Modelos
+- Un `Usuario` (cliente) puede realizar muchas `SolicitudPresupuesto` (1:N).
+- Una `SolicitudPresupuesto` puede contener muchos `DetalleSolicitud` (1:N).
+- Cada `DetalleSolicitud` corresponde a un `Producto` (N:1).
 
-- **Cliente.js**: Define la clase `Cliente`, que representa a los clientes del negocio. Contiene los atributos `id`, `nombre`, y `telefono`.
+## Archivos de modelos
 
-- **Mascota.js**: Define la clase `Mascota`, que representa a las mascotas asociadas a los clientes. Contiene los atributos `id`, `nombre`, `tipo`, y `edad`.
+- `Backend/src/models/Usuario.js`
+- `Backend/src/models/Producto.js`
+- `Backend/src/models/SolicitudPresupuesto.js`
+- `Backend/src/models/DetalleSolicitud.js`
 
-- **Turno.js**: Define la clase `Turno`, que representa las citas o turnos solicitados por los clientes. Contiene los atributos `id`, `fecha`, `hora`, y `clienteId`.
-
-## Objetivos del Proyecto
-
-1. **Organización**: Establecer una estructura clara y organizada para el desarrollo del proyecto.
-2. **Modelado del Dominio**: Identificar y representar las entidades principales del negocio a través de clases en JavaScript.
-3. **Desarrollo Iterativo**: Implementar la funcionalidad del frontend y backend en etapas, asegurando que cada parte funcione correctamente antes de avanzar.
-
-Este archivo README servirá como guía para el desarrollo y la colaboración en el proyecto.
+> Importante: en esta entrega solo se representa el dominio con clases y atributos; no se implementa lógica de negocio, base de datos ni Express.
