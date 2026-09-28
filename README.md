@@ -1,8 +1,43 @@
-# Instaler - Entrega 1
+# Instaler
 
 Repositorio: `diosquez-mirko-instaler`
 
-## Estructura inicial
+## Entrega 2 - Arquitectura MVC
+
+API REST con Express, persistencia en memoria (arrays) y manejo centralizado de errores.
+
+### Estructura `Backend/src`
+
+- `controllers/` → reciben la request y devuelven la response.
+- `services/` → lógica y validaciones de negocio.
+- `repositories/` → acceso a datos (arrays en memoria).
+- `models/` → clases del dominio.
+- `routes/` → definición de endpoints.
+- `middlewares/` → manejo centralizado de errores.
+- `responses/` → formato consistente de respuestas (`ApiResponse`).
+- `exceptions/` → `AppError` y subclases (`BadRequestError`, `NotFoundError`, `ConflictError`).
+- `enums/` → `Messages.js` con los mensajes centralizados.
+- `utils/` → validadores reutilizables.
+
+### CRUD de Producto
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| GET | `/api/productos` | Obtener todos |
+| GET | `/api/productos/:id` | Obtener por ID |
+| POST | `/api/productos` | Crear |
+| PUT | `/api/productos/:id` | Modificar |
+| DELETE | `/api/productos/:id` | Eliminar |
+
+### Cómo ejecutar
+
+```bash
+cd Backend
+npm install
+npm start
+```
+
+## Entrega 1 - Estructura inicial
 
 - `Frontend/`
 - `Backend/`

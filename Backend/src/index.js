@@ -1,12 +1,31 @@
-import Usuario from "./models/Usuario.js";
-import Producto from "./models/Producto.js";
-import SolicitudPresupuesto from "./models/SolicitudPresupuesto.js";
-import DetalleSolicitud from "./models/DetalleSolicitud.js";
+import express from "express";
+import productoRoutes from "./routes/producto.routes.js";
+import { errorHandler, notFoundHandler } from "./middlewares/errorHandler.js";
 
-const usuario = new Usuario(1, "Mirko", "mirko@mail.com", "1234", "Cliente");
-const producto = new Producto(1, "Cemento", "Bolsa x 50kg", 8500, 100, true);
-const solicitud = new SolicitudPresupuesto(1, "2026-09-14", "Pendiente", usuario.id);
-const detalle = new DetalleSolicitud(1, solicitud.id, producto.id, 3, producto.precio);
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-console.log("Modelos creados correctamente:");
-console.log({ usuario, producto, solicitud, detalle });
+app.use(express.json());
+
+app.get("/", (req, res) => {
+    res.status(200).json({
+        success: true,
+        data: {
+            nombre: "API Instaler",
+            endpoints: {
+                productos: "/api/productos"
+            }
+        }
+    });
+});
+
+app.use("/api/productos", productoRoutes);
+
+app.use(notFoundHandler);
+app.use(errorHandler);
+
+app.listen(PORT, () => {
+    console.log(`Servidor Instaler escuchando en http://localhost:${PORT}`);
+});
+
+export default app;
