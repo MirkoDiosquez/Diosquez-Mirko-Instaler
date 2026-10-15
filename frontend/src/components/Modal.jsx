@@ -1,19 +1,24 @@
 import { useEffect, useRef } from "react";
 import Icon from "./Icon";
+import { useNotificationHost } from "./Notifications";
 export default function Modal({ title, children, onClose, busy = false }) {
   const ref = useRef(null);
+  const notificationHost = useRef(null);
+  const setNotificationHost = useNotificationHost();
   useEffect(() => {
     const previous = document.activeElement;
     const dialog = ref.current;
     dialog.showModal();
+    setNotificationHost(notificationHost.current);
     const overflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
+      setNotificationHost(null);
       dialog.close();
       document.body.style.overflow = overflow;
       previous?.focus();
     };
-  }, []);
+  }, [setNotificationHost]);
   return (
     <dialog
       ref={ref}
@@ -39,6 +44,7 @@ export default function Modal({ title, children, onClose, busy = false }) {
           <Icon name="close" />
         </button>
       </div>
+      <div className="modal-notification-host" ref={notificationHost} />
       {children}
     </dialog>
   );

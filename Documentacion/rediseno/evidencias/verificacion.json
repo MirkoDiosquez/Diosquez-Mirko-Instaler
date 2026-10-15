@@ -1,0 +1,813 @@
+{
+  "preservation": [
+    {
+      "hash": "#inicio",
+      "status": "Pass",
+      "changes": []
+    },
+    {
+      "hash": "#productos",
+      "status": "Pass",
+      "changes": []
+    },
+    {
+      "hash": "#nosotros",
+      "status": "Pass",
+      "changes": []
+    },
+    {
+      "hash": "#contacto",
+      "status": "Pass",
+      "changes": []
+    },
+    {
+      "hash": "#gestion",
+      "status": "Pass",
+      "changes": []
+    },
+    {
+      "hash": "#contenido",
+      "status": "Pass",
+      "changes": []
+    }
+  ],
+  "tests": [
+    {
+      "test": "Preservación",
+      "status": "Pass",
+      "evidence": "Seis hashes, títulos, encabezados, IDs, enlaces, navegación, campos de contacto y texto legal coinciden con la línea base."
+    },
+    {
+      "test": "Imágenes",
+      "status": "Pass",
+      "evidence": [
+        {
+          "src": "http://127.0.0.1:5173/src/assets/materiales/cemento.webp?t=1792089240015",
+          "loaded": true,
+          "alt": "Ilustración de una bolsa sin marca y polvo de cemento gris"
+        },
+        {
+          "src": "http://127.0.0.1:5173/src/assets/materiales/arena.webp?t=1792089240366",
+          "loaded": true,
+          "alt": "Ilustración de arena fina de construcción y una pala de mano"
+        }
+      ]
+    },
+    {
+      "test": "Búsqueda y vacío",
+      "status": "Pass",
+      "evidence": "Filtra sin distinguir mayúsculas; búsqueda sin resultados muestra estado vacío."
+    },
+    {
+      "test": "Teclado y modal",
+      "status": "Pass",
+      "evidence": "Enter abre detalle; Tab no enfoca controles del fondo; Escape cierra y devuelve el foco."
+    },
+    {
+      "test": "Consulta prellenada",
+      "status": "Pass",
+      "evidence": "Producto y descripción correctos; destino #contacto."
+    },
+    {
+      "test": "Descarga local",
+      "status": "Pass",
+      "evidence": "Archivo real consulta-instaler.txt completado, contenido correcto, sin peticiones POST ni envío."
+    },
+    {
+      "test": "Validación de productos",
+      "status": "Pass",
+      "evidence": "Cuatro errores asociados y foco al primer campo; nombres y orden de cinco campos preservados."
+    },
+    {
+      "test": "Error de API",
+      "status": "Pass",
+      "evidence": "Nombre duplicado informa error legible y alcanzable dentro del diálogo; conserva el formulario."
+    },
+    {
+      "test": "Crear y estado ocupado",
+      "status": "Pass",
+      "evidence": "Alta real con precio decimal y stock cero; controles bloqueados durante el guardado; notificación de éxito."
+    },
+    {
+      "test": "Sin stock y recurso desconocido",
+      "status": "Pass",
+      "evidence": "Consulta deshabilitada con stock cero y alternativa explícita para producto sin imagen asignada."
+    },
+    {
+      "test": "Editar",
+      "status": "Pass",
+      "evidence": "Precio y stock actualizados en API real."
+    },
+    {
+      "test": "Estado inactivo y filtro",
+      "status": "Pass",
+      "evidence": "Producto inactivo aparece en el filtro de gestión y sale del catálogo."
+    },
+    {
+      "test": "Eliminar",
+      "status": "Pass",
+      "evidence": "Cancelar conserva registro; confirmar elimina y la API responde 404."
+    },
+    {
+      "test": "Carga, vacío, error y reintento",
+      "status": "Pass",
+      "evidence": "Estados visibles verificados mediante respuestas controladas en el navegador; reintento recupera los dos productos reales."
+    },
+    {
+      "test": "Movimiento reducido y foco",
+      "status": "Pass",
+      "evidence": "Ninguna animación activa con reduce; navegación Tab presenta contorno visible."
+    }
+  ],
+  "responsive": [
+    {
+      "width": 1440,
+      "view": "inicio",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Todo para construir.\nTodo para avanzar.",
+          "rect": {
+            "x": 80,
+            "y": 250.734375,
+            "width": 499.40625,
+            "height": 111.96875,
+            "top": 250.734375,
+            "right": 579.40625,
+            "bottom": 362.703125,
+            "left": 80
+          }
+        },
+        {
+          "text": "Detrás de cada obra, un buen equipo.",
+          "rect": {
+            "x": 756,
+            "y": 936.734375,
+            "width": 478.015625,
+            "height": 74.21875,
+            "top": 936.734375,
+            "right": 1234.015625,
+            "bottom": 1010.953125,
+            "left": 756
+          }
+        },
+        {
+          "text": "Lo que tu proyecto necesita.",
+          "rect": {
+            "x": 80,
+            "y": 1526.65625,
+            "width": 495.5625,
+            "height": 37.109375,
+            "top": 1526.65625,
+            "right": 575.5625,
+            "bottom": 1563.765625,
+            "left": 80
+          }
+        },
+        {
+          "text": "Razones para elegirnos.",
+          "rect": {
+            "x": 80,
+            "y": 2761.25,
+            "width": 1280,
+            "height": 37.109375,
+            "top": 2761.25,
+            "right": 1360,
+            "bottom": 2798.359375,
+            "left": 80
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 80,
+            "y": 3148.546875,
+            "width": 521.46875,
+            "height": 74.21875,
+            "top": 3148.546875,
+            "right": 601.46875,
+            "bottom": 3222.765625,
+            "left": 80
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 1440,
+      "view": "productos",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Nuestro catálogo de productos.",
+          "rect": {
+            "x": 80,
+            "y": 262,
+            "width": 495.5625,
+            "height": 37.109375,
+            "top": 262,
+            "right": 575.5625,
+            "bottom": 299.109375,
+            "left": 80
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 80,
+            "y": 1512.59375,
+            "width": 521.46875,
+            "height": 74.21875,
+            "top": 1512.59375,
+            "right": 601.46875,
+            "bottom": 1586.8125,
+            "left": 80
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 1440,
+      "view": "gestion",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Gestión de productos",
+          "rect": {
+            "x": 80,
+            "y": 238,
+            "width": 382.890625,
+            "height": 37.109375,
+            "top": 238,
+            "right": 462.890625,
+            "bottom": 275.109375,
+            "left": 80
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 1024,
+      "view": "inicio",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Todo para construir.\nTodo para avanzar.",
+          "rect": {
+            "x": 32,
+            "y": 252.921875,
+            "width": 355.171875,
+            "height": 79.59375,
+            "top": 252.921875,
+            "right": 387.171875,
+            "bottom": 332.515625,
+            "left": 32
+          }
+        },
+        {
+          "text": "Detrás de cada obra, un buen equipo.",
+          "rect": {
+            "x": 532,
+            "y": 853,
+            "width": 460,
+            "height": 74.21875,
+            "top": 853,
+            "right": 992,
+            "bottom": 927.21875,
+            "left": 532
+          }
+        },
+        {
+          "text": "Lo que tu proyecto necesita.",
+          "rect": {
+            "x": 32,
+            "y": 1430.375,
+            "width": 495.5625,
+            "height": 37.109375,
+            "top": 1430.375,
+            "right": 527.5625,
+            "bottom": 1467.484375,
+            "left": 32
+          }
+        },
+        {
+          "text": "Razones para elegirnos.",
+          "rect": {
+            "x": 32,
+            "y": 2558.296875,
+            "width": 960,
+            "height": 37.109375,
+            "top": 2558.296875,
+            "right": 992,
+            "bottom": 2595.40625,
+            "left": 32
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 32,
+            "y": 3028.59375,
+            "width": 564.921875,
+            "height": 74.21875,
+            "top": 3028.59375,
+            "right": 596.921875,
+            "bottom": 3102.8125,
+            "left": 32
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 1024,
+      "view": "productos",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Nuestro catálogo de productos.",
+          "rect": {
+            "x": 32,
+            "y": 262,
+            "width": 495.5625,
+            "height": 37.109375,
+            "top": 262,
+            "right": 527.5625,
+            "bottom": 299.109375,
+            "left": 32
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 32,
+            "y": 1405.921875,
+            "width": 564.921875,
+            "height": 74.21875,
+            "top": 1405.921875,
+            "right": 596.921875,
+            "bottom": 1480.140625,
+            "left": 32
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 1024,
+      "view": "gestion",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Gestión de productos",
+          "rect": {
+            "x": 32,
+            "y": 238,
+            "width": 382.890625,
+            "height": 37.109375,
+            "top": 238,
+            "right": 414.890625,
+            "bottom": 275.109375,
+            "left": 32
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 768,
+      "view": "inicio",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Todo para construir.\nTodo para avanzar.",
+          "rect": {
+            "x": 32,
+            "y": 199,
+            "width": 423.984375,
+            "height": 95.03125,
+            "top": 199,
+            "right": 455.984375,
+            "bottom": 294.03125,
+            "left": 32
+          }
+        },
+        {
+          "text": "Detrás de cada obra, un buen equipo.",
+          "rect": {
+            "x": 404,
+            "y": 1107.59375,
+            "width": 332,
+            "height": 74.21875,
+            "top": 1107.59375,
+            "right": 736,
+            "bottom": 1181.8125,
+            "left": 404
+          }
+        },
+        {
+          "text": "Lo que tu proyecto necesita.",
+          "rect": {
+            "x": 32,
+            "y": 1710.5625,
+            "width": 495.5625,
+            "height": 37.109375,
+            "top": 1710.5625,
+            "right": 527.5625,
+            "bottom": 1747.671875,
+            "left": 32
+          }
+        },
+        {
+          "text": "Razones para elegirnos.",
+          "rect": {
+            "x": 32,
+            "y": 2753.15625,
+            "width": 704,
+            "height": 37.109375,
+            "top": 2753.15625,
+            "right": 736,
+            "bottom": 2790.265625,
+            "left": 32
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 32,
+            "y": 3274.640625,
+            "width": 564.921875,
+            "height": 74.21875,
+            "top": 3274.640625,
+            "right": 596.921875,
+            "bottom": 3348.859375,
+            "left": 32
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 768,
+      "view": "productos",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Nuestro catálogo de productos.",
+          "rect": {
+            "x": 32,
+            "y": 262,
+            "width": 495.5625,
+            "height": 37.109375,
+            "top": 262,
+            "right": 527.5625,
+            "bottom": 299.109375,
+            "left": 32
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 32,
+            "y": 1320.59375,
+            "width": 564.921875,
+            "height": 74.21875,
+            "top": 1320.59375,
+            "right": 596.921875,
+            "bottom": 1394.8125,
+            "left": 32
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 768,
+      "view": "gestion",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Gestión de productos",
+          "rect": {
+            "x": 32,
+            "y": 238,
+            "width": 382.890625,
+            "height": 37.109375,
+            "top": 238,
+            "right": 414.890625,
+            "bottom": 275.109375,
+            "left": 32
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 390,
+      "view": "inicio",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Todo para construir.\nTodo para avanzar.",
+          "rect": {
+            "x": 18,
+            "y": 229.671875,
+            "width": 292.984375,
+            "height": 65.6875,
+            "top": 229.671875,
+            "right": 310.984375,
+            "bottom": 295.359375,
+            "left": 18
+          }
+        },
+        {
+          "text": "Detrás de cada obra, un buen equipo.",
+          "rect": {
+            "x": 18,
+            "y": 1295.921875,
+            "width": 354,
+            "height": 64.9375,
+            "top": 1295.921875,
+            "right": 372,
+            "bottom": 1360.859375,
+            "left": 18
+          }
+        },
+        {
+          "text": "Lo que tu proyecto necesita.",
+          "rect": {
+            "x": 18,
+            "y": 1797.609375,
+            "width": 354,
+            "height": 64.9375,
+            "top": 1797.609375,
+            "right": 372,
+            "bottom": 1862.546875,
+            "left": 18
+          }
+        },
+        {
+          "text": "Razones para elegirnos.",
+          "rect": {
+            "x": 18,
+            "y": 3474.875,
+            "width": 354,
+            "height": 32.46875,
+            "top": 3474.875,
+            "right": 372,
+            "bottom": 3507.34375,
+            "left": 18
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 18,
+            "y": 4035.6875,
+            "width": 354,
+            "height": 64.9375,
+            "top": 4035.6875,
+            "right": 372,
+            "bottom": 4100.625,
+            "left": 18
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 390,
+      "view": "productos",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Nuestro catálogo de productos.",
+          "rect": {
+            "x": 18,
+            "y": 300.671875,
+            "width": 354,
+            "height": 64.9375,
+            "top": 300.671875,
+            "right": 372,
+            "bottom": 365.609375,
+            "left": 18
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 18,
+            "y": 1917.9375,
+            "width": 354,
+            "height": 64.9375,
+            "top": 1917.9375,
+            "right": 372,
+            "bottom": 1982.875,
+            "left": 18
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 390,
+      "view": "gestion",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Gestión de productos",
+          "rect": {
+            "x": 18,
+            "y": 276.671875,
+            "width": 354,
+            "height": 32.46875,
+            "top": 276.671875,
+            "right": 372,
+            "bottom": 309.140625,
+            "left": 18
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 320,
+      "view": "inicio",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Todo para construir.\nTodo para avanzar.",
+          "rect": {
+            "x": 16,
+            "y": 225.4375,
+            "width": 269.8125,
+            "height": 60.46875,
+            "top": 225.4375,
+            "right": 285.8125,
+            "bottom": 285.90625,
+            "left": 16
+          }
+        },
+        {
+          "text": "Detrás de cada obra, un buen equipo.",
+          "rect": {
+            "x": 18,
+            "y": 1230.390625,
+            "width": 284,
+            "height": 55.65625,
+            "top": 1230.390625,
+            "right": 302,
+            "bottom": 1286.046875,
+            "left": 18
+          }
+        },
+        {
+          "text": "Lo que tu proyecto necesita.",
+          "rect": {
+            "x": 18,
+            "y": 1773.984375,
+            "width": 284,
+            "height": 55.65625,
+            "top": 1773.984375,
+            "right": 302,
+            "bottom": 1829.640625,
+            "left": 18
+          }
+        },
+        {
+          "text": "Razones para elegirnos.",
+          "rect": {
+            "x": 18,
+            "y": 3374.21875,
+            "width": 284,
+            "height": 27.828125,
+            "top": 3374.21875,
+            "right": 302,
+            "bottom": 3402.046875,
+            "left": 18
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 18,
+            "y": 4004.359375,
+            "width": 284,
+            "height": 55.65625,
+            "top": 4004.359375,
+            "right": 302,
+            "bottom": 4060.015625,
+            "left": 18
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 320,
+      "view": "productos",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Nuestro catálogo de productos.",
+          "rect": {
+            "x": 18,
+            "y": 296.4375,
+            "width": 284,
+            "height": 55.65625,
+            "top": 296.4375,
+            "right": 302,
+            "bottom": 352.09375,
+            "left": 18
+          }
+        },
+        {
+          "text": "Estamos cerca. Estamos para ayudarte.",
+          "rect": {
+            "x": 18,
+            "y": 1836.671875,
+            "width": 284,
+            "height": 55.65625,
+            "top": 1836.671875,
+            "right": 302,
+            "bottom": 1892.328125,
+            "left": 18
+          }
+        }
+      ],
+      "tableOverflow": 0
+    },
+    {
+      "width": 320,
+      "view": "gestion",
+      "overflow": 0,
+      "broken": 0,
+      "heads": [
+        {
+          "text": "Gestión de productos",
+          "rect": {
+            "x": 18,
+            "y": 272.4375,
+            "width": 284,
+            "height": 27.828125,
+            "top": 272.4375,
+            "right": 302,
+            "bottom": 300.265625,
+            "left": 18
+          }
+        }
+      ],
+      "tableOverflow": 0
+    }
+  ],
+  "emDash": [
+    "#inicio",
+    "#productos",
+    "#nosotros",
+    "#contacto",
+    "#gestion",
+    "#contenido",
+    "catálogo vacío",
+    "detalle",
+    "validaciones de contacto",
+    "consulta descargada",
+    "producto inválido",
+    "guardando",
+    "confirmación de eliminación",
+    "carga de gestión",
+    "gestión vacía",
+    "error de red",
+    "inicio 1440px",
+    "productos 1440px",
+    "gestion 1440px",
+    "inicio 1024px",
+    "productos 1024px",
+    "gestion 1024px",
+    "inicio 768px",
+    "productos 768px",
+    "gestion 768px",
+    "inicio 390px",
+    "productos 390px",
+    "gestion 390px",
+    "inicio 320px",
+    "productos 320px",
+    "gestion 320px"
+  ],
+  "errors": []
+}

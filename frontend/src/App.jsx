@@ -15,6 +15,7 @@ import {
   eliminarProducto,
 } from "./services/productos";
 import { formatoPrecio } from "./utils/productos";
+import useReveal from "./utils/useReveal";
 
 const getPage = () => {
   const hash = window.location.hash.slice(1);
@@ -22,6 +23,7 @@ const getPage = () => {
 };
 export default function App() {
   const [page, setPage] = useState(getPage);
+  useReveal(page);
   const [productos, setProductos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -58,7 +60,12 @@ export default function App() {
         if (["nosotros", "contacto"].includes(section))
           document
             .getElementById(section)
-            ?.scrollIntoView({ behavior: "smooth" });
+            ?.scrollIntoView({
+              behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
+                .matches
+                ? "instant"
+                : "smooth",
+            });
         else {
           window.scrollTo({ top: 0 });
           document.getElementById("contenido")?.focus({ preventScroll: true });

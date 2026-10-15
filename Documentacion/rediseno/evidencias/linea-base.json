@@ -1,0 +1,606 @@
+{
+  "pages": [
+    {
+      "hash": "#inicio",
+      "title": "Materiales para tus proyectos · Instaler",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Todo para construir. Todo para avanzar."
+        },
+        {
+          "tag": "H2",
+          "text": "Detrás de cada obra, un buen equipo."
+        },
+        {
+          "tag": "H2",
+          "text": "Lo que tu proyecto necesita."
+        },
+        {
+          "tag": "H3",
+          "text": "Cemento"
+        },
+        {
+          "tag": "H3",
+          "text": "Arena fina"
+        },
+        {
+          "tag": "H2",
+          "text": "Razones para elegirnos."
+        },
+        {
+          "tag": "H3",
+          "text": "Calidad garantizada"
+        },
+        {
+          "tag": "H3",
+          "text": "Asesoramiento técnico"
+        },
+        {
+          "tag": "H3",
+          "text": "Todo para tu obra"
+        },
+        {
+          "tag": "H3",
+          "text": "Atención personalizada"
+        },
+        {
+          "tag": "H2",
+          "text": "Estamos cerca. Estamos para ayudarte."
+        },
+        {
+          "tag": "H3",
+          "text": "Prepará tu consulta"
+        }
+      ],
+      "anchors": [
+        "root",
+        "contenido",
+        "nosotros",
+        "productos",
+        "contacto",
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "navigation": [
+        {
+          "label": "Inicio",
+          "href": "#inicio"
+        },
+        {
+          "label": "Productos",
+          "href": "#productos"
+        },
+        {
+          "label": "Nosotros",
+          "href": "#nosotros"
+        },
+        {
+          "label": "Contacto",
+          "href": "#contacto"
+        },
+        {
+          "label": "Gestión",
+          "href": "#gestion"
+        }
+      ],
+      "fields": [
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "urlTargets": [
+        "#contenido",
+        "#inicio",
+        "#inicio",
+        "#productos",
+        "#nosotros",
+        "#contacto",
+        "#gestion",
+        "#productos",
+        "#contacto",
+        "#contacto",
+        "#productos",
+        "#contacto",
+        "https://www.google.com/maps/search/?api=1&query=Av.+de+los+Constituyentes+4702+CABA",
+        "#inicio",
+        "#inicio"
+      ]
+    },
+    {
+      "hash": "#productos",
+      "title": "Catálogo · Instaler",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Nuestro catálogo de productos."
+        },
+        {
+          "tag": "H3",
+          "text": "Cemento"
+        },
+        {
+          "tag": "H3",
+          "text": "Arena fina"
+        },
+        {
+          "tag": "H2",
+          "text": "Estamos cerca. Estamos para ayudarte."
+        },
+        {
+          "tag": "H3",
+          "text": "Prepará tu consulta"
+        }
+      ],
+      "anchors": [
+        "root",
+        "contenido",
+        "productos",
+        "contacto",
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "navigation": [
+        {
+          "label": "Inicio",
+          "href": "#inicio"
+        },
+        {
+          "label": "Productos",
+          "href": "#productos"
+        },
+        {
+          "label": "Nosotros",
+          "href": "#nosotros"
+        },
+        {
+          "label": "Contacto",
+          "href": "#contacto"
+        },
+        {
+          "label": "Gestión",
+          "href": "#gestion"
+        }
+      ],
+      "fields": [
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "urlTargets": [
+        "#contenido",
+        "#inicio",
+        "#inicio",
+        "#productos",
+        "#nosotros",
+        "#contacto",
+        "#gestion",
+        "#inicio",
+        "#contacto",
+        "https://www.google.com/maps/search/?api=1&query=Av.+de+los+Constituyentes+4702+CABA",
+        "#inicio",
+        "#inicio"
+      ]
+    },
+    {
+      "hash": "#nosotros",
+      "title": "Materiales para tus proyectos · Instaler",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Todo para construir. Todo para avanzar."
+        },
+        {
+          "tag": "H2",
+          "text": "Detrás de cada obra, un buen equipo."
+        },
+        {
+          "tag": "H2",
+          "text": "Lo que tu proyecto necesita."
+        },
+        {
+          "tag": "H3",
+          "text": "Cemento"
+        },
+        {
+          "tag": "H3",
+          "text": "Arena fina"
+        },
+        {
+          "tag": "H2",
+          "text": "Razones para elegirnos."
+        },
+        {
+          "tag": "H3",
+          "text": "Calidad garantizada"
+        },
+        {
+          "tag": "H3",
+          "text": "Asesoramiento técnico"
+        },
+        {
+          "tag": "H3",
+          "text": "Todo para tu obra"
+        },
+        {
+          "tag": "H3",
+          "text": "Atención personalizada"
+        },
+        {
+          "tag": "H2",
+          "text": "Estamos cerca. Estamos para ayudarte."
+        },
+        {
+          "tag": "H3",
+          "text": "Prepará tu consulta"
+        }
+      ],
+      "anchors": [
+        "root",
+        "contenido",
+        "nosotros",
+        "productos",
+        "contacto",
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "navigation": [
+        {
+          "label": "Inicio",
+          "href": "#inicio"
+        },
+        {
+          "label": "Productos",
+          "href": "#productos"
+        },
+        {
+          "label": "Nosotros",
+          "href": "#nosotros"
+        },
+        {
+          "label": "Contacto",
+          "href": "#contacto"
+        },
+        {
+          "label": "Gestión",
+          "href": "#gestion"
+        }
+      ],
+      "fields": [
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "urlTargets": [
+        "#contenido",
+        "#inicio",
+        "#inicio",
+        "#productos",
+        "#nosotros",
+        "#contacto",
+        "#gestion",
+        "#productos",
+        "#contacto",
+        "#contacto",
+        "#productos",
+        "#contacto",
+        "https://www.google.com/maps/search/?api=1&query=Av.+de+los+Constituyentes+4702+CABA",
+        "#inicio",
+        "#inicio"
+      ]
+    },
+    {
+      "hash": "#contacto",
+      "title": "Materiales para tus proyectos · Instaler",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Todo para construir. Todo para avanzar."
+        },
+        {
+          "tag": "H2",
+          "text": "Detrás de cada obra, un buen equipo."
+        },
+        {
+          "tag": "H2",
+          "text": "Lo que tu proyecto necesita."
+        },
+        {
+          "tag": "H3",
+          "text": "Cemento"
+        },
+        {
+          "tag": "H3",
+          "text": "Arena fina"
+        },
+        {
+          "tag": "H2",
+          "text": "Razones para elegirnos."
+        },
+        {
+          "tag": "H3",
+          "text": "Calidad garantizada"
+        },
+        {
+          "tag": "H3",
+          "text": "Asesoramiento técnico"
+        },
+        {
+          "tag": "H3",
+          "text": "Todo para tu obra"
+        },
+        {
+          "tag": "H3",
+          "text": "Atención personalizada"
+        },
+        {
+          "tag": "H2",
+          "text": "Estamos cerca. Estamos para ayudarte."
+        },
+        {
+          "tag": "H3",
+          "text": "Prepará tu consulta"
+        }
+      ],
+      "anchors": [
+        "root",
+        "contenido",
+        "nosotros",
+        "productos",
+        "contacto",
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "navigation": [
+        {
+          "label": "Inicio",
+          "href": "#inicio"
+        },
+        {
+          "label": "Productos",
+          "href": "#productos"
+        },
+        {
+          "label": "Nosotros",
+          "href": "#nosotros"
+        },
+        {
+          "label": "Contacto",
+          "href": "#contacto"
+        },
+        {
+          "label": "Gestión",
+          "href": "#gestion"
+        }
+      ],
+      "fields": [
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "urlTargets": [
+        "#contenido",
+        "#inicio",
+        "#inicio",
+        "#productos",
+        "#nosotros",
+        "#contacto",
+        "#gestion",
+        "#productos",
+        "#contacto",
+        "#contacto",
+        "#productos",
+        "#contacto",
+        "https://www.google.com/maps/search/?api=1&query=Av.+de+los+Constituyentes+4702+CABA",
+        "#inicio",
+        "#inicio"
+      ]
+    },
+    {
+      "hash": "#gestion",
+      "title": "Gestión de productos · Instaler",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Gestión de productos"
+        }
+      ],
+      "anchors": [
+        "root",
+        "contenido"
+      ],
+      "navigation": [
+        {
+          "label": "Inicio",
+          "href": "#inicio"
+        },
+        {
+          "label": "Productos",
+          "href": "#productos"
+        },
+        {
+          "label": "Nosotros",
+          "href": "#nosotros"
+        },
+        {
+          "label": "Contacto",
+          "href": "#contacto"
+        },
+        {
+          "label": "Gestión",
+          "href": "#gestion"
+        }
+      ],
+      "fields": [],
+      "urlTargets": [
+        "#contenido",
+        "#inicio",
+        "#inicio",
+        "#productos",
+        "#nosotros",
+        "#contacto",
+        "#gestion",
+        "#inicio",
+        "#inicio",
+        "#inicio"
+      ]
+    },
+    {
+      "hash": "#contenido",
+      "title": "Materiales para tus proyectos · Instaler",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Todo para construir. Todo para avanzar."
+        },
+        {
+          "tag": "H2",
+          "text": "Detrás de cada obra, un buen equipo."
+        },
+        {
+          "tag": "H2",
+          "text": "Lo que tu proyecto necesita."
+        },
+        {
+          "tag": "H3",
+          "text": "Cemento"
+        },
+        {
+          "tag": "H3",
+          "text": "Arena fina"
+        },
+        {
+          "tag": "H2",
+          "text": "Razones para elegirnos."
+        },
+        {
+          "tag": "H3",
+          "text": "Calidad garantizada"
+        },
+        {
+          "tag": "H3",
+          "text": "Asesoramiento técnico"
+        },
+        {
+          "tag": "H3",
+          "text": "Todo para tu obra"
+        },
+        {
+          "tag": "H3",
+          "text": "Atención personalizada"
+        },
+        {
+          "tag": "H2",
+          "text": "Estamos cerca. Estamos para ayudarte."
+        },
+        {
+          "tag": "H3",
+          "text": "Prepará tu consulta"
+        }
+      ],
+      "anchors": [
+        "root",
+        "contenido",
+        "nosotros",
+        "productos",
+        "contacto",
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "navigation": [
+        {
+          "label": "Inicio",
+          "href": "#inicio"
+        },
+        {
+          "label": "Productos",
+          "href": "#productos"
+        },
+        {
+          "label": "Nosotros",
+          "href": "#nosotros"
+        },
+        {
+          "label": "Contacto",
+          "href": "#contacto"
+        },
+        {
+          "label": "Gestión",
+          "href": "#gestion"
+        }
+      ],
+      "fields": [
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "urlTargets": [
+        "#contenido",
+        "#inicio",
+        "#inicio",
+        "#productos",
+        "#nosotros",
+        "#contacto",
+        "#gestion",
+        "#productos",
+        "#contacto",
+        "#contacto",
+        "#productos",
+        "#contacto",
+        "https://www.google.com/maps/search/?api=1&query=Av.+de+los+Constituyentes+4702+CABA",
+        "#inicio",
+        "#inicio"
+      ]
+    }
+  ],
+  "interactions": {
+    "initialProducts": 2,
+    "search": [
+      "Cemento"
+    ],
+    "detail": {
+      "open": true,
+      "title": "Cemento",
+      "text": "Cemento\n\nBolsa x 50kg\n\nPrecio por unidad\n$ 8.500,00\nStock disponible\n100 unidades\nEstado\nActivo\nCerrar\nConsultar producto"
+    },
+    "consultation": {
+      "hash": "#contacto",
+      "fields": [
+        "contacto-nombre",
+        "contacto-email",
+        "contacto-consulta"
+      ],
+      "prefilled": "Hola, quisiera consultar por Cemento (Bolsa x 50kg).\nCantidad: "
+    },
+    "productFields": [
+      "nombre",
+      "descripcion",
+      "precio",
+      "stock",
+      "activo"
+    ]
+  },
+  "errors": [],
+  "management": [
+    {
+      "width": 1440,
+      "overflow": 0,
+      "tableOverflow": 0
+    },
+    {
+      "width": 768,
+      "overflow": 0,
+      "tableOverflow": 0
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "tableOverflow": 214
+    }
+  ]
+}

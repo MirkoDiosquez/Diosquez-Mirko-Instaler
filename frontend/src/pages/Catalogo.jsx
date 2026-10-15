@@ -22,7 +22,6 @@ export default function Catalogo({
       <div className="container">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">MATERIALES PARA CADA ETAPA</span>
             <h2>
               {compact
                 ? "Lo que tu proyecto necesita."
@@ -64,7 +63,7 @@ export default function Catalogo({
           empty={!visibles.length}
         />
         {!loading && !error && (
-          <div className="product-grid">
+          <div className="product-grid" data-count={visibles.length}>
             {visibles.map((producto) => (
               <ProductCard
                 key={producto.id}
@@ -74,6 +73,12 @@ export default function Catalogo({
               />
             ))}
           </div>
+        )}
+        {!loading && !error && visibles.length > 0 && (
+          <p className="image-disclosure">
+            Las imágenes son ilustraciones generadas de los materiales. No
+            representan marcas ni productos exactos.
+          </p>
         )}
         <div className="catalog-note">
           <Icon name="people" />

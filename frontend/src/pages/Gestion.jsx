@@ -25,7 +25,6 @@ export default function Gestion({
       </div>
       <div className="section-heading">
         <div>
-          <span className="eyebrow">ADMINISTRACIÓN DEL CATÁLOGO</span>
           <h1>Gestión de productos</h1>
           <p>Todos tus materiales, organizados en un solo lugar.</p>
         </div>
@@ -47,7 +46,7 @@ export default function Gestion({
             <Icon name="box" size={24} />
             <span>
               {label}
-              <strong>{loading || error ? "—" : count}</strong>
+              <strong>{loading || error ? "..." : count}</strong>
             </span>
           </div>
         ))}
@@ -89,23 +88,33 @@ export default function Gestion({
         />
         {!loading && !error && visibles.length > 0 && (
           <div className="table-scroll">
-            <table>
+            <table role="table">
               <caption className="sr-only">
                 Productos: nombre, precio, stock, estado y acciones
               </caption>
-              <thead>
-                <tr>
-                  <th scope="col">Producto</th>
-                  <th scope="col">Precio</th>
-                  <th scope="col">Stock</th>
-                  <th scope="col">Estado</th>
-                  <th scope="col">Acciones</th>
+              <thead role="rowgroup">
+                <tr role="row">
+                  <th scope="col" role="columnheader">
+                    Producto
+                  </th>
+                  <th scope="col" role="columnheader">
+                    Precio
+                  </th>
+                  <th scope="col" role="columnheader">
+                    Stock
+                  </th>
+                  <th scope="col" role="columnheader">
+                    Estado
+                  </th>
+                  <th scope="col" role="columnheader">
+                    Acciones
+                  </th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody role="rowgroup">
                 {visibles.map((p) => (
-                  <tr key={p.id}>
-                    <td>
+                  <tr key={p.id} role="row">
+                    <td role="cell" data-label="Producto">
                       <button
                         className="product-name"
                         onClick={() => onDetails(p)}
@@ -114,20 +123,22 @@ export default function Gestion({
                       </button>
                       <span className="table-description">{p.descripcion}</span>
                     </td>
-                    <td>{formatoPrecio(p.precio)}</td>
-                    <td>
+                    <td role="cell" data-label="Precio">
+                      {formatoPrecio(p.precio)}
+                    </td>
+                    <td role="cell" data-label="Stock">
                       <span className={p.stock === 0 ? "stock-zero" : ""}>
                         {p.stock} unidades
                       </span>
                     </td>
-                    <td>
+                    <td role="cell" data-label="Estado">
                       <span
                         className={`badge ${p.activo ? "available" : "unavailable"}`}
                       >
                         {p.activo ? "Activo" : "Inactivo"}
                       </span>
                     </td>
-                    <td>
+                    <td role="cell" data-label="Acciones">
                       <div className="row-actions">
                         <button
                           className="icon-button"

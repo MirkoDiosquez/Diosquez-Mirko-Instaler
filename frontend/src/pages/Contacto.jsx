@@ -54,12 +54,7 @@ export default function Contacto({ selected }) {
     <section className="contact-section" id="contacto">
       <div className="container contact-grid">
         <div>
-          <span className="eyebrow">HABLEMOS DE TU PRÓXIMO PROYECTO</span>
-          <h2>
-            Estamos cerca.
-            <br />
-            Estamos para ayudarte.
-          </h2>
+          <h2>Estamos cerca. Estamos para ayudarte.</h2>
           <p className="muted">
             Traé tu idea, tus dudas o tu lista de materiales.
             <br />

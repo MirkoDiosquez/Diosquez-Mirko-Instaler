@@ -1,0 +1,12 @@
+ROUND 2
+Seen in one second: hero de materiales con titular claro, composición estable y CTA naranja.
+Idea (one sentence): los materiales protagonizan el recorrido desde la búsqueda hasta la consulta, con la identidad de Instaler.
+Live thing: catálogo real, búsqueda y consulta prellenada.
+Layout words by section: hero=split (apilado en tablet/móvil) / nosotros=imagen y texto / productos=muestras abiertas / beneficios=columnas de lectura / contacto=formulario y dirección / footer=marca y datos.
+Scores: design 7.5 · usability 8.0 · creativity 6.0 · content 8.0 → overall 7.4.
+Caps applied: máximo 6 provisional por un FAIL automático que confunde la ubicación de la barra superior con una etiqueta del logo.
+Top three problems (most visible first), each with the screenshot it shows in and the fix:
+1. mobile-fold.jpg: la ubicación de la barra de contexto no está semánticamente dentro del header. Integrarla al header para describir correctamente su función; conservar el texto y su ubicación visual.
+2. mobile-page-01.jpg: comprobar aún a 320 px que los títulos y navegación mantengan lectura sin recortes. Ajustar el rol de títulos de sección a 24 px solo en ese ancho si resulta necesario.
+3. desktop-page-02.jpg: el footer prioriza información de contacto con espacio suficiente. No se requiere añadir una imagen o animación para llenar ese espacio.
+No se agrega video: las imágenes ilustrativas aprobadas transmiten los materiales sin simular el negocio y sin una descarga multimedia adicional. Las entradas breves y el feedback de controles cubren el movimiento solicitado.

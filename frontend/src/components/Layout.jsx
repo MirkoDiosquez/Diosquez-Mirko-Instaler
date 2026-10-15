@@ -2,11 +2,20 @@ import Icon from "./Icon";
 export function Brand() {
   return (
     <a className="brand" href="#inicio" aria-label="Instaler, ir al inicio">
-      <span className="brand-symbol" aria-hidden="true">
-        <i />
-        <i />
-        <i />
-      </span>
+      <svg
+        className="brand-symbol"
+        viewBox="0 0 48 56"
+        width="48"
+        height="56"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          className="brand-pillar"
+          d="M2 23 14 16v36L2 55V23ZM18 9 30 2v47l-12 3V9Z"
+        />
+        <path className="brand-accent" d="m34 17 12 7v31l-12-6V17Z" />
+      </svg>
       <span>
         <strong>
           INSTA<span>LER</span>
@@ -22,6 +31,7 @@ export default function Layout({ children, page }) {
       <a className="skip-link" href="#contenido">
         Saltar al contenido
       </a>
+      <header className="header">
       <div className="topbar">
         <div className="container">
           <span>Materiales, soluciones y asesoramiento técnico.</span>
@@ -30,7 +40,6 @@ export default function Layout({ children, page }) {
           </span>
         </div>
       </div>
-      <header className="header">
         <div className="container header-content">
           <Brand />
           <nav aria-label="Navegación principal">

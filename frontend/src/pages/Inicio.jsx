@@ -1,6 +1,7 @@
 import Catalogo from "./Catalogo";
 import Icon from "../components/Icon";
-import frente from "../assets/local-frente.jpg";
+import frente from "../assets/materiales/oficio.webp";
+import hero from "../assets/materiales/hero.webp";
 const benefits = [
   [
     "shield",
@@ -23,14 +24,11 @@ export default function Inicio(props) {
   return (
     <>
       <section className="hero">
-        <div className="container hero-content">
-          <span className="hero-eyebrow">
-            <span /> TU OBRA, EN BUENAS MANOS
-          </span>
+        <div className="hero-copy">
           <h1>
             Todo para construir.
             <br />
-            Todo para <em>avanzar.</em>
+            Todo para avanzar.
           </h1>
           <p>
             Materiales para instalaciones, construcción y mantenimiento. El
@@ -45,34 +43,40 @@ export default function Inicio(props) {
             </a>
           </div>
           <div className="hero-caption">
-            <Icon name="pin" size={16} /> Av. de los Constituyentes 4702 · CABA
+            <Icon name="pin" size={20} /> Av. de los Constituyentes 4702 · CABA
           </div>
         </div>
-        <div className="hero-stamp">
-          <Icon name="shield" size={28} />
-          <span>
-            MATERIALES DE CALIDAD
-            <br />
-            <strong>Confianza en cada proyecto.</strong>
-          </span>
-        </div>
+        <figure className="hero-media">
+          <img
+            src={hero}
+            width="1536"
+            height="1024"
+            fetchPriority="high"
+            decoding="async"
+            alt="Composición ilustrativa de arena, cemento, barras de acero y caños para construcción"
+          />
+          <figcaption>
+            Materiales que acompañan tu proyecto. Imagen ilustrativa.
+          </figcaption>
+        </figure>
       </section>
       <section className="about-section" id="nosotros">
         <div className="container about-grid">
-          <div className="about-photo">
+          <figure className="about-photo">
             <img
               src={frente}
-              alt="Frente del local Instaler, con su fachada azul y acceso a la tienda"
+              alt="Composición ilustrativa de herramientas, ladrillo y materiales de obra"
+              width="1200"
+              height="800"
+              loading="lazy"
+              decoding="async"
             />
-            <span>Tu aliado, de principio a fin.</span>
-          </div>
+            <figcaption>
+              Tu aliado, de principio a fin. Imagen ilustrativa.
+            </figcaption>
+          </figure>
           <div>
-            <span className="eyebrow">SOMOS INSTALER</span>
-            <h2>
-              Detrás de cada obra,
-              <br />
-              un buen equipo.
-            </h2>
+            <h2>Detrás de cada obra, un buen equipo.</h2>
             <p>
               Somos un comercio dedicado a la venta de materiales y soluciones
               para instalaciones, construcción y mantenimiento edilicio.
@@ -91,12 +95,10 @@ export default function Inicio(props) {
       <Catalogo {...props} compact />
       <section className="benefits">
         <div className="container">
-          <span className="eyebrow">MÁS QUE MATERIALES</span>
           <h2>Razones para elegirnos.</h2>
           <div className="benefit-grid">
-            {benefits.map(([icon, title, text]) => (
+            {benefits.map(([, title, text]) => (
               <article key={title}>
-                <Icon name={icon} size={33} />
                 <h3>{title}</h3>
                 <p>{text}</p>
               </article>

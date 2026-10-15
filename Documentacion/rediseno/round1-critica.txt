@@ -1,0 +1,12 @@
+ROUND 1
+Seen in one second: titular blanco sobre azul y un conjunto reconocible de materiales.
+Idea (one sentence): los materiales que se buscan en Instaler se muestran con la claridad de una muestra de trabajo, junto al recorrido hacia una consulta.
+Live thing: búsqueda de productos reales y prellenado de la consulta descargable.
+Layout words by section: hero=split / nosotros=split / productos=dos muestras / beneficios=texto en columnas / contacto=split / footer=columnas.
+Scores: design 6.5 · usability 7.5 · creativity 6.0 · content 7.5 → overall 6.9.
+Caps applied: máximo 6 por FAIL del inspector; no es una aprobación final.
+Top three problems (most visible first), each with the screenshot it shows in and the fix:
+1. mobile-page-01.jpg: la imagen de oficio conserva el alto HTML de 800 px y se estira. Aplicar height:auto para respetar 3:2.
+2. tablet-fold.jpg: el hero partido comprime demasiado la imagen y el titular queda menor que la marca. Usar composición apilada en tablet y titular de 44 px.
+3. desktop-page-01.jpg: el precio se interpreta como encabezado mayor que el nombre. Asignar el rol tipográfico lead para distinguir ambos sin generar una falsa etiqueta sobre título.
+El inspector no registró las animaciones WAAPI porque terminan antes de la muestra. Cambiar al mismo movimiento breve con animación CSS observable, manteniendo visible el contenido y reduciendo movimiento si corresponde.
